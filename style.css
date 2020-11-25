@@ -1,0 +1,17 @@
+header {
+	background-position: center;
+	background-image: url("open-book-1428428_1920.jpg");
+	background-size: cover;
+}
+
+h1 {
+	font-family: 'Crimson Text', serif;
+	font-size: 5rem;
+	text-align:center;
+	color: white;
+	padding: 15% 0;
+}
+
+h2, h3 {
+	font-family: 'Work Sans', sans-serif;
+}
