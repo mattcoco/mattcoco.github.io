@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yo/static/css/main.61f9be63.css",
+    "main.js": "/yo/static/js/main.9ca0bb54.js",
+    "static/js/787.cda612ba.chunk.js": "/yo/static/js/787.cda612ba.chunk.js",
+    "static/media/messytable_marvinmeyer.jpg": "/yo/static/media/messytable_marvinmeyer.bb6fba9696728d0c4f7b.jpg",
+    "index.html": "/yo/index.html",
+    "main.61f9be63.css.map": "/yo/static/css/main.61f9be63.css.map",
+    "main.9ca0bb54.js.map": "/yo/static/js/main.9ca0bb54.js.map",
+    "787.cda612ba.chunk.js.map": "/yo/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61f9be63.css",
+    "static/js/main.9ca0bb54.js"
+  ]
+}
