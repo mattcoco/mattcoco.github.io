@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+ }
+
+body {
+	background-color: black;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+button {
+	position: relative;
+	background-color: purple;
+	color: white;
+	border: 1px purple solid;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 20px 30px;
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+button:focus {
+	outline: none;
+}
+
+button .circle {
+	position: absolute;
+	background-color: white;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	transform: translate(-50%, -50%) scale(0);
+	/* myAnimScale sera el nombre de la animación, definida abajo */
+	animation: myAnimScale 0.5s ease-out;
+}
+
+@keyframes myAnimScale {
+	to {
+		/* Lo mismo de arriva en el button .circle {}, solo que cambiando la scale */
+		transform: translate(-50%, -50%) scale(3);
+		/* Con esto desaparece al final; un fading-out effect */
+		opacity: 0;
+	}
+}
