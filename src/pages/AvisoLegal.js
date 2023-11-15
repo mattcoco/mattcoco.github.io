@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from 'react'
 import { Container } from "react-bootstrap";
 
 const AvisoLegal = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
+
   return (
     <>
       <Container xl className="mb-5">

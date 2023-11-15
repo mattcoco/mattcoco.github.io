@@ -192,7 +192,7 @@ const projects = [
         nombre: 'Barra de navegación fija',
         descripcion: 'Un landing donde la barra de navegación queda fija arriba y se transforma para mejorar legibilidad',
         url: 'proyectos/p25/'
-    },{
+    }, {
         key: 24,
         src: '/imagenes/proyectos/p24.gif',
         src_static: '/imagenes/proyectos/p24_static.png',
@@ -271,7 +271,7 @@ const projects = [
         nombre: 'Contador de followers',
         descripcion: 'Añade un efecto "scramble" a diversos contadores',
         url: 'proyectos/p15/'
-    },{
+    }, {
         key: 14,
         src: '/imagenes/proyectos/p14.gif',
         src_static: '/imagenes/proyectos/p14_static.png',
@@ -369,14 +369,14 @@ const projects = [
     }, {
         key: 2,
         src: '/imagenes/proyectos/p2.gif',
-        src_static: '/imagenes/proyectos/p2.png',
+        src_static: '/imagenes/proyectos/p2_static.png',
         nombre: 'Barra de progreso',
         descripcion: 'Una barra de progreso que se activa con dos botones "adelante" y "atrás',
         url: 'proyectos/p2/'
     }, {
         key: 1,
         src: '/imagenes/proyectos/p1.gif',
-        src_static: '/imagenes/proyectos/p1.png',
+        src_static: '/imagenes/proyectos/p1_static.png',
         nombre: 'Cartas título',
         descripcion: 'Construcción de cartas título que se expanden al hacer click',
         url: 'proyectos/p1/'
