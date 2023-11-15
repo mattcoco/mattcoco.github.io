@@ -16,14 +16,22 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-primero) !important;
+}
+
 ul,
 ol {
   padding-left: 1rem;
 }
+
 
 /* Navbar */
 
@@ -33,12 +41,14 @@ ol {
   font-size: 18px;
   padding: 0;
 }
+
 .enlace {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin: 0 8px;
   position: relative;
 }
+
 .enlace::before {
   position: absolute;
   bottom: 0;
@@ -47,11 +57,13 @@ ol {
   content: "";
   border-bottom: 4px transparent solid;
 }
+
 .enlace:hover::before {
   width: 100%;
   border-bottom: 4px var(--color-primero) solid;
   transition: width 0.4s ease-out;
 }
+
 .enlace.attention {
   border-radius: 10px;
   color: #fff !important;
@@ -59,10 +71,12 @@ ol {
   padding: 10px 20px !important;
   transition: background-color 0.4s ease-out;
 }
+
 .enlace.attention:hover {
   background-color: #222;
   transition: background-color 0.4s ease-out;
 }
+
 .enlace.attention::before {
   display: none;
 }
@@ -76,6 +90,7 @@ ol {
     font-size: 14px;
   }
 }
+
 /* Crece el tamaño de fuente porque el menu se colapsa a los <=992px */
 @media (max-width: 991px) {
   .menu-colapsado {
@@ -98,6 +113,7 @@ ol {
     align-items: center !important;
     justify-content: center !important;
   }
+
   .navbar-img {
     height: auto;
     width: 87vw;
@@ -112,37 +128,44 @@ ol {
   justify-content: flex-start;
   align-items: flex-start;
   height: 85vh;
-  max-height: 85vh; /* El efecto typewrite altera la altura */
+  max-height: 85vh;
+  /* El efecto typewrite altera la altura */
   padding: 0 150px;
   opacity: 0;
   animation: aparecer 2s ease-in forwards;
 }
+
 @keyframes aparecer {
   to {
     opacity: 1;
   }
 }
+
 .landing-texto-container h1 {
   font-family: "Poppins", sans-serif;
   font-size: 7rem;
   font-weight: 700;
   line-height: 6.4rem;
 }
+
 .landing-texto-container .texto-fijo {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 40%;
 }
+
 .landing-texto-container .texto-fijo h1 {
   color: #333;
 }
+
 .landing-texto-container .texto-movil {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: 60%;
 }
+
 .landing-texto-container .texto-movil h1 {
   color: var(--color-segundo);
 }
@@ -152,47 +175,56 @@ ol {
   .landing-texto-container {
     padding: 0 100px;
   }
+
   .landing-texto-container h1 {
     font-size: 6rem;
     line-height: 5.5rem;
   }
 }
+
 @media (max-width: 1399px) {
   .landing-texto-container {
     padding: 0 70px;
     height: 80vh;
     max-height: 80vh;
   }
+
   .landing-texto-container h1 {
     font-size: 6rem;
     line-height: 5.5rem;
   }
 }
+
 @media (max-width: 1199px) {
   .landing-texto-container {
     padding: 0 70px;
     height: 75vh;
     max-height: 75vh;
   }
+
   .landing-texto-container h1 {
     font-size: 5.5rem;
     line-height: 5rem;
   }
 }
+
 @media (max-width: 991px) {
   .landing-texto-container {
     padding: 0 35px;
     margin-top: 20px;
   }
+
   .landing-texto-container h1 {
     font-size: 4.9rem;
     line-height: 4.7rem;
   }
 }
+
 @media (max-width: 767px) {
   .landing-texto-container {
     padding: 0 25px;
   }
+
   .landing-texto-container h1 {
     font-size: 4.4rem;
     line-height: 4.7rem;
@@ -205,6 +237,7 @@ ol {
     height: 67vh;
     max-height: 67vh;
   }
+
   .landing-texto-container h1 {
     text-align: center;
     font-size: 2.7rem;
@@ -223,6 +256,7 @@ section.quieros h1 {
   font-size: 60px;
   text-align: center;
 }
+
 section.quieros h1 i {
   color: var(--color-segundo);
 }
@@ -233,6 +267,7 @@ section.quieros h1 i {
     font-size: 35px;
     font-weight: 700;
   }
+
   section.quieros h1 i {
     margin-top: 15px;
     display: block;
@@ -248,6 +283,7 @@ section.quieros .barra-quiero {
   margin-top: 30px;
   width: 100%;
 }
+
 section .barra-quiero h2 {
   font-size: 1.5rem;
   line-height: 1.75rem;
@@ -255,6 +291,7 @@ section .barra-quiero h2 {
   display: inline;
   color: #fff;
 }
+
 section .barra-quiero h3 {
   font-weight: 300;
   font-size: 1rem;
@@ -262,6 +299,7 @@ section .barra-quiero h3 {
   text-transform: none;
   color: #fff;
 }
+
 section .barra-quiero p {
   font-size: 1rem;
   line-height: 1.4rem;
@@ -269,6 +307,7 @@ section .barra-quiero p {
   color: #fff;
   opacity: 0;
 }
+
 section .barra-quiero .bloque-quiero {
   position: absolute;
   width: 25%;
@@ -280,24 +319,30 @@ section .barra-quiero .bloque-quiero {
   z-index: 99;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 section .barra-quiero .bloque-quiero:hover {
   background-color: var(--color-segundo);
   max-height: 500px;
   transition: background-color ease 0.3s, max-height ease-in 0.5s;
 }
+
 section .barra-quiero .bloque-quiero:hover p {
   opacity: 1;
   transition: opacity ease-in 0.4s;
 }
+
 section .barra-quiero .bloque-quiero:nth-child(1) {
   margin-left: 0;
 }
+
 section .barra-quiero .bloque-quiero:nth-child(2) {
   margin-left: 25%;
 }
+
 section .barra-quiero .bloque-quiero:nth-child(3) {
   margin-left: 50%;
 }
+
 section .barra-quiero .bloque-quiero:nth-child(4) {
   margin-left: 75%;
 }
@@ -310,6 +355,7 @@ section .barra-quiero .bloque-quiero i {
   transform: rotate(0deg);
   transition: transform ease-in 0.3s;
 }
+
 section .barra-quiero .bloque-quiero:hover i {
   transform: rotate(90deg);
   transition: transform ease-in 0.3s;
@@ -322,9 +368,11 @@ section .barra-quiero .bloque-quiero:hover i {
     flex-wrap: wrap;
     height: 480px;
   }
+
   section.quieros .barra-quiero p {
     opacity: 1;
   }
+
   section.quieros .barra-quiero .bloque-quiero {
     display: flex;
     flex-direction: column;
@@ -334,18 +382,23 @@ section .barra-quiero .bloque-quiero:hover i {
     height: 240px;
     max-height: 370px;
   }
+
   section .barra-quiero .bloque-quiero:hover {
     max-height: 370px;
   }
+
   section.quieros .barra-quiero .bloque-quiero:nth-child(1) {
     margin-left: 0;
   }
+
   section.quieros .barra-quiero .bloque-quiero:nth-child(2) {
     margin-left: 0;
   }
+
   section.quieros .barra-quiero .bloque-quiero:nth-child(3) {
     margin-left: 0;
   }
+
   section.quieros .barra-quiero .bloque-quiero:nth-child(4) {
     margin-left: 0;
   }
@@ -359,13 +412,16 @@ section .barra-quiero .bloque-quiero:hover i {
   section.quieros .barra-quiero {
     height: 540px;
   }
+
   section.quieros .barra-quiero p {
     opacity: 1;
   }
+
   section.quieros .barra-quiero .bloque-quiero {
     height: 270px;
     max-height: 370px;
   }
+
   section .barra-quiero .bloque-quiero:hover {
     max-height: 370px;
   }
@@ -375,10 +431,12 @@ section .barra-quiero .bloque-quiero:hover i {
   section.quieros .barra-quiero {
     height: 640px;
   }
+
   section.quieros .barra-quiero .bloque-quiero {
     height: 320px;
     max-height: 370px;
   }
+
   section .barra-quiero .bloque-quiero:hover {
     max-height: 370px;
   }
@@ -390,6 +448,7 @@ section .barra-quiero .bloque-quiero:hover i {
     flex-direction: column;
     height: auto;
   }
+
   section.quieros .barra-quiero .bloque-quiero {
     display: inline;
     width: 100%;
@@ -414,9 +473,11 @@ section .barra-quiero .bloque-quiero:hover i {
   text-align: center;
   margin-bottom: 45px;
 }
+
 .info-intro-background h1 i {
   color: var(--color-segundo);
 }
+
 .info-intro-background {
   letter-spacing: 0px;
 }
@@ -436,24 +497,25 @@ section .barra-quiero .bloque-quiero:hover i {
   display: block;
   margin-left: 10px;
 }
+
 .info-intro-background ul li {
   display: block;
   position: relative;
 }
+
 .info-intro-background ul li:not(:last-child) {
   margin-bottom: 16px;
 }
+
 .info-intro-background ul li:before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: -25px;
-  background: linear-gradient(
-    45deg,
-    var(--color-segundo),
-    var(--color-tercero)
-  );
+  background: linear-gradient(45deg,
+      var(--color-segundo),
+      var(--color-tercero));
   height: 12px;
   width: 12px;
   border-radius: 50%;
@@ -465,14 +527,17 @@ section .barra-quiero .bloque-quiero:hover i {
   line-height: 2.2;
   margin-left: -40px;
 }
+
 .info-intro-background ol li {
   display: block;
   position: relative;
   margin-left: 22px;
 }
+
 .info-intro-background ol li span {
   margin-left: 35px;
 }
+
 .info-intro-background ol li:before {
   display: flex;
   align-items: center;
@@ -483,11 +548,9 @@ section .barra-quiero .bloque-quiero:hover i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(
-    45deg,
-    var(--color-segundo),
-    var(--color-tercero)
-  );
+  background: linear-gradient(45deg,
+      var(--color-segundo),
+      var(--color-tercero));
   height: 1.5em;
   width: 1.5em;
   border-radius: 2em;
@@ -497,14 +560,17 @@ section .barra-quiero .bloque-quiero:hover i {
   .info-intro-background ol li:before {
     display: none;
   }
+
   .info-intro-background ol {
     list-style-type: counter;
     margin-left: 10px;
   }
+
   .info-intro-background ol li {
     display: list-item;
     margin: 0;
   }
+
   .info-intro-background ol li span {
     margin-left: 5px;
   }
@@ -515,6 +581,7 @@ section .barra-quiero .bloque-quiero:hover i {
     padding: 40px 50px 0;
   }
 }
+
 @media (max-width: 767px) {
   .info-intro-background {
     padding: 40px 35px 0;
@@ -524,10 +591,12 @@ section .barra-quiero .bloque-quiero:hover i {
     margin-left: 0px;
   }
 }
+
 @media (max-width: 575px) {
   .info-intro-background {
     padding-top: 35px;
   }
+
   .info-intro-background h1 {
     margin: 0;
     margin-bottom: 35px;
@@ -546,25 +615,33 @@ section .barra-quiero .bloque-quiero:hover i {
 /*  FOOTER */
 footer {
   border: none;
+  background-color: rgba(0, 0, 0, 0.08);
 }
+
 footer .container {
   padding: 50px 0;
 }
+
 footer ul {
   list-style-type: none;
   padding: 0;
 }
+
 footer li {
   margin-bottom: 0.4rem;
   cursor: pointer;
 }
+
 footer li:hover {
   color: #222;
 }
+
 footer li:last-child {
   margin-bottom: 0;
 }
+
 @media (max-width: 575px) {
+
   footer p,
   footer h4,
   footer ul {
@@ -576,6 +653,7 @@ footer li:last-child {
 .gif-container {
   position: relative;
 }
+
 .gif-container-before {
   content: "";
   position: absolute;
@@ -587,6 +665,7 @@ footer li:last-child {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
 .gif-container:hover .gif-container-before {
   opacity: 1;
 }
@@ -638,6 +717,7 @@ footer li:last-child {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
+
 .tecnologia:hover h4::before {
   opacity: 1;
   transition: opacity 0.4s ease;
@@ -648,6 +728,7 @@ footer li:last-child {
   filter: grayscale(0);
   transition: filter 0.4s ease, transform 0.4s ease-in-out;
 }
+
 .tecnologia:hover h4 {
   color: var(--color-segundo);
   transition: color 0.4s ease;
@@ -658,10 +739,12 @@ footer li:last-child {
     margin-right: 5px;
     margin-bottom: 25px;
   }
+
   .tecnologia img {
     width: 80px;
     height: 80px;
   }
+
   .tecnologia h4 {
     font-size: 1rem;
   }
@@ -671,6 +754,7 @@ footer li:last-child {
   .tecnologia img {
     filter: grayscale(0);
   }
+
   .tecnologia h4::before {
     display: none;
   }
@@ -682,10 +766,12 @@ footer li:last-child {
     margin-right: 5px;
     margin-bottom: 25px;
   }
+
   .tecnologia img {
     width: 50px;
     height: 50px;
   }
+
   .tecnologia h4 {
     font-weight: 300;
     letter-spacing: 0px;
@@ -704,6 +790,7 @@ footer li:last-child {
   flex-direction: column;
   align-items: center;
 }
+
 .seccion-servicios h1 {
   margin: 60px 0;
   width: 100%;
@@ -723,11 +810,13 @@ section .servicios-container {
   justify-content: center;
   margin-bottom: 90px;
 }
+
 /* Definición de la clase círculo. Hay circulo grande (el central) y circulo pequeño (el de cada servicio) */
 section .servicios-container .circulo {
   border-radius: 50%;
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
+
 section .servicios-container .circulo.grande {
   border: 10px solid #fff;
   position: relative;
@@ -752,22 +841,26 @@ section .servicios-container .bloque {
   align-items: center;
   width: 450px;
 }
+
 /* Posicionamiento de cada bloque (circulo + texto) */
 section .servicios-container .bloque.bloque-uno {
   top: -235px;
   left: -640px;
   justify-content: right;
 }
+
 section .servicios-container .bloque.bloque-dos {
   bottom: -235px;
   left: -640px;
   justify-content: right;
 }
+
 section .servicios-container .bloque.bloque-tres {
   top: -235px;
   right: -640px;
   justify-content: left;
 }
+
 section .servicios-container .bloque.bloque-cuatro {
   bottom: -235px;
   right: -640px;
@@ -787,11 +880,13 @@ section .servicios-container .bloque .circulo.peque {
   transition: color 0.25s ease;
   transition: background-color ease 0.3s, color ease 0.3s;
 }
+
 /* Margen para cada circulo pequeño, dependiendo de si está a la izquierda (1 y 2) o a la derecha (3 y 4) */
 section .servicios-container .bloque.bloque-uno .circulo.peque,
 section .servicios-container .bloque.bloque-dos .circulo.peque {
   margin-left: 20px;
 }
+
 section .servicios-container .bloque.bloque-tres .circulo.peque,
 section .servicios-container .bloque.bloque-cuatro .circulo.peque {
   margin-right: 20px;
@@ -805,6 +900,7 @@ section .servicios-container .bloque .texto {
   padding: 15px;
   transition: background-color ease 0.3s, color ease 0.3s;
 }
+
 section .servicios-container .bloque:hover .texto {
   background-color: rgba(88, 0, 255, 0.9);
   transition: background-color ease 0.3s, color ease 0.3s;
@@ -814,12 +910,14 @@ section .servicios-container .bloque.bloque-tres .texto,
 section .servicios-container .bloque.bloque-cuatro .texto {
   text-align: left;
 }
+
 section .servicios-container .bloque h3 {
   color: #333;
   margin: 0;
   display: block;
   text-transform: uppercase;
 }
+
 section .servicios-container .bloque p {
   margin: 0;
   display: block;
@@ -849,9 +947,11 @@ section .servicios-container .bloque:hover .circulo.peque {
   animation: myAnimScale 2s ease infinite;
   visibility: hidden;
 }
+
 section .servicios-container .bloque:hover .ripple {
   visibility: visible;
 }
+
 @keyframes myAnimScale {
   to {
     transform: scale(1.5);
@@ -859,6 +959,7 @@ section .servicios-container .bloque:hover .ripple {
     opacity: 0;
   }
 }
+
 .show-peque {
   display: none;
 }
@@ -869,18 +970,22 @@ section .servicios-container .bloque:hover .ripple {
     height: 400px;
     width: 400px;
   }
+
   section .servicios-container .bloque.bloque-uno {
     top: -210px;
     left: -590px;
   }
+
   section .servicios-container .bloque.bloque-dos {
     bottom: -210px;
     left: -590px;
   }
+
   section .servicios-container .bloque.bloque-tres {
     top: -210px;
     right: -590px;
   }
+
   section .servicios-container .bloque.bloque-cuatro {
     bottom: -210px;
     right: -590px;
@@ -893,44 +998,55 @@ section .servicios-container .bloque:hover .ripple {
     padding: 0 40px;
     line-height: 85px;
   }
+
   section .servicios-container .circulo.grande {
     height: 340px;
     width: 340px;
   }
+
   section .servicios-container .bloque {
     width: 380px;
     max-width: 380px;
   }
+
   section .servicios-container .bloque.bloque-uno {
     top: -200px;
     left: -470px;
   }
+
   section .servicios-container .bloque.bloque-dos {
     bottom: -200px;
     left: -470px;
   }
+
   section .servicios-container .bloque.bloque-tres {
     top: -200px;
     right: -470px;
   }
+
   section .servicios-container .bloque.bloque-cuatro {
     bottom: -200px;
     right: -470px;
   }
+
   section .servicios-container .bloque.bloque-uno .circulo.peque,
   section .servicios-container .bloque.bloque-dos .circulo.peque {
     margin-left: 10px;
   }
+
   section .servicios-container .bloque.bloque-tres .circulo.peque,
   section .servicios-container .bloque.bloque-cuatro .circulo.peque {
     margin-right: 10px;
   }
+
   section .servicios-container .bloque .texto {
     padding: 10px;
   }
+
   section .servicios-container .bloque h3 {
     font-size: 20px;
   }
+
   section .servicios-container .bloque p {
     font-size: 14px;
   }
@@ -940,6 +1056,7 @@ section .servicios-container .bloque:hover .ripple {
   section .servicios-container {
     display: none;
   }
+
   .show-peque {
     display: flex;
     flex-direction: column;
@@ -947,16 +1064,20 @@ section .servicios-container .bloque:hover .ripple {
     width: 760px;
     margin-bottom: 60px;
   }
+
   .show-peque .fila {
     display: flex;
     justify-content: space-around;
   }
+
   .show-peque .react-reveal {
     width: 48%;
   }
+
   .seccion-servicios h1 {
     margin: 30px 0;
   }
+
   section .bloque {
     position: relative;
     display: flex;
@@ -965,6 +1086,7 @@ section .servicios-container .bloque:hover .ripple {
     border-radius: 10px;
     margin: 10px;
   }
+
   section .bloque .circulo.peque {
     border: solid 3px rgba(88, 0, 255, 0.9);
     position: absolute;
@@ -980,41 +1102,51 @@ section .servicios-container .bloque:hover .ripple {
     color: #333;
     border-radius: 50%;
   }
+
   section .bloque .circulo.peque i {
     font-size: 40px;
   }
+
   section .bloque.bloque-uno .circulo.peque,
   section .bloque.bloque-dos .circulo.peque {
     margin-left: 10px;
   }
+
   section .bloque.bloque-tres .circulo.peque,
   section .bloque.bloque-cuatro .circulo.peque {
     margin-right: 10px;
   }
+
   section .bloque .texto {
     padding: 15px;
     letter-spacing: 0;
   }
+
   section .bloque:hover {
     background-color: rgba(88, 0, 255, 0.9);
     transition: background-color ease 0.3s, color ease 0.3s;
   }
+
   section .bloque h3 {
     margin-right: 100px;
   }
+
   section .bloque p {
     margin-bottom: 0;
   }
+
   section .bloque:hover h3,
   section .bloque:hover p {
     color: #fff;
   }
+
   section .bloque:hover .circulo.peque {
     color: rgba(88, 0, 255, 0.9);
     transition: background-color ease 0.3s, color ease 0.3s;
     border: none;
   }
 }
+
 @media (max-width: 767px) {
   .seccion-servicios h1 {
     font-size: 3rem;
@@ -1022,27 +1154,34 @@ section .servicios-container .bloque:hover .ripple {
     padding: 0 15px;
     line-height: 3.5rem;
   }
+
   .show-peque .react-reveal {
     width: 100%;
   }
+
   .show-peque {
     width: 95%;
   }
+
   .show-peque .fila {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
   section .bloque {
     width: 95%;
   }
+
   section .bloque .circulo.peque {
     top: 50%;
     transform: translateY(-50%);
   }
+
   section .bloque h3 {
     margin-right: 100px;
   }
+
   section .bloque p {
     margin-right: 90px;
   }
@@ -1053,12 +1192,15 @@ section .servicios-container .bloque:hover .ripple {
     font-size: 2rem;
     margin: 0;
   }
+
   section .servicios-container {
     display: none;
   }
+
   section .bloque .circulo.peque {
     display: none;
   }
+
   section .bloque h3,
   section .bloque p {
     margin-right: 0;
@@ -1074,22 +1216,26 @@ section .servicios-container .bloque:hover .ripple {
   padding: 65px 0;
   box-shadow: 0px 20px 10px rgba(0, 0, 0, 1);
 }
+
 .servicios-fondo h1 {
   color: inherit;
   font-size: 100px;
   color: #222;
 }
+
 .servicios-fondo p {
   font-size: 30px;
   text-align: center;
   margin: 0 30px 30px;
 }
+
 .servicios-contenedor {
   width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
 }
+
 .servicios-panel {
   position: relative;
   height: 160px;
@@ -1101,10 +1247,12 @@ section .servicios-container .bloque:hover .ripple {
   opacity: 0;
   animation: aparecer-progresivo 1s ease-in 0.5s forwards;
 }
+
 .servicios-panel.izq {
   padding-right: 180px;
   margin-right: 10px;
 }
+
 .servicios-panel.der {
   padding-left: 180px;
   margin-left: 10px;
@@ -1113,12 +1261,15 @@ section .servicios-container .bloque:hover .ripple {
 .servicios-panel.retraso-uno {
   animation: aparecer-progresivo 1s ease-in 0.8s forwards;
 }
+
 .servicios-panel.retraso-dos {
   animation: aparecer-progresivo 1s ease-in 1.1s forwards;
 }
+
 .servicios-panel.retraso-tres {
   animation: aparecer-progresivo 1s ease-in 1.4s forwards;
 }
+
 .servicios-panel.retraso-cuatro {
   animation: aparecer-progresivo 1s ease-in 1.8s forwards;
 }
@@ -1127,6 +1278,7 @@ section .servicios-container .bloque:hover .ripple {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -1137,13 +1289,16 @@ section .servicios-container .bloque:hover .ripple {
   font-size: 30px;
   letter-spacing: -1px;
 }
+
 .servicios-panel-texto.izq {
   text-align: right;
 }
+
 .servicios-panel-texto .negrita {
   color: #333;
   font-weight: 700;
 }
+
 .servicios-panel-icono {
   position: absolute;
   top: 50%;
@@ -1158,9 +1313,11 @@ section .servicios-container .bloque:hover .ripple {
   border-radius: 50%;
   background-color: #444;
 }
+
 .servicios-panel-icono.der {
   right: 0;
 }
+
 .servicios-panel-icono.izq {
   left: 0;
 }
@@ -1169,55 +1326,69 @@ section .servicios-container .bloque:hover .ripple {
   .servicios-fondo h1 {
     font-size: 100px;
   }
+
   .servicios-contenedor {
     width: 1100px;
   }
+
   .servicios-panel {
     width: 490px;
   }
+
   .servicios-panel-texto {
     font-size: 30px;
   }
 }
+
 @media (max-width: 1199px) {
   .servicios-fondo h1 {
     font-size: 75px;
   }
+
   .servicios-contenedor {
     width: 950px;
   }
+
   .servicios-panel {
     width: 470px;
   }
+
   .servicios-panel-texto {
     font-size: 26px;
   }
 }
+
 @media (max-width: 991px) {
   .servicios-fondo h1 {
     font-size: 60px;
   }
+
   .servicios-contenedor {
     width: 720px;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .servicios-panel.izq {
     padding-right: 140px;
     margin-right: 10px;
   }
+
   .servicios-panel.der {
     padding-left: 140px;
     margin-left: 10px;
   }
+
   .servicios-panel-icono {
     height: 130px;
     width: 130px;
     font-size: 80px;
   }
+
   .servicios-panel {
     width: 360px;
   }
+
   .servicios-panel-texto {
     font-size: 22px;
   }
@@ -1228,37 +1399,45 @@ section .servicios-container .bloque:hover .ripple {
     text-align: center;
     font-size: 65px;
   }
+
   .servicios-contenedor {
     height: 120px;
     width: 550px;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .servicios-panel.izq {
     padding-right: 100px;
     margin-right: 10px;
   }
+
   .servicios-panel.der {
     padding-left: 100px;
     margin-left: 10px;
   }
+
   .servicios-panel-icono {
     height: 90px;
     width: 90px;
     font-size: 50px;
   }
+
   .servicios-panel {
     width: 360px;
   }
+
   .servicios-panel-texto {
     font-size: 18px;
   }
 }
+
 /*! He eliminado el gráfico en resoluciones móvil para no complicarme  */
 @media (max-width: 575px) {
   .servicios-fondo {
     display: none;
   }
+
   .servicios-contenedor {
     display: none;
   }
@@ -1272,18 +1451,22 @@ section .servicios-container .bloque:hover .ripple {
 .servicios-contenido {
   background-color: #ddd;
 }
+
 .servicios-contenido.otro-fondo {
   background-color: rgba(0, 39, 255, 0.3);
 }
+
 .justificar-fila {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .servicios-contenido h1 {
   font-size: 80px;
   color: #222;
 }
+
 .servicios-contenido.otro-fondo h1 {
   font-size: 80px;
   color: #fff;
@@ -1300,16 +1483,19 @@ section .servicios-container .bloque:hover .ripple {
   font-size: 3rem;
   letter-spacing: -2px;
 }
+
 .servicios-contenido p {
   font-size: 1.2rem;
   letter-spacing: 0px;
   font-weight: 100;
 }
+
 .icono-fondo {
   font-size: 175px;
   color: rgba(0, 39, 255, 0.3);
   margin: 15px 0 25px;
 }
+
 .my-6 {
   margin: 6rem 0;
 }
@@ -1319,6 +1505,7 @@ section .servicios-container .bloque:hover .ripple {
 .hoja-de-ruta {
   width: 100%;
 }
+
 .hoja-de-ruta h2 {
   font-size: 3rem;
   text-align: center;
@@ -1327,10 +1514,12 @@ section .servicios-container .bloque:hover .ripple {
   background-color: rgba(88, 0, 255, 0.9);
   border-radius: 6px;
 }
+
 .hoja-de-ruta .paso {
   display: flex;
   align-items: center;
 }
+
 .hoja-de-ruta .paso h3 {
   display: flex;
   align-items: center;
@@ -1341,6 +1530,7 @@ section .servicios-container .bloque:hover .ripple {
   border: #333 solid 3px;
   margin: 0 20px 0 0;
 }
+
 .hoja-de-ruta .paso p {
   text-align: center;
   font-weight: bold;
@@ -1353,6 +1543,7 @@ section .servicios-container .bloque:hover .ripple {
   border-radius: 8px;
   background-color: rgba(88, 0, 255, 0.9);
 }
+
 .hoja-de-ruta i {
   color: #333;
   font-size: 25px;
@@ -1365,9 +1556,11 @@ section .servicios-container .bloque:hover .ripple {
     font-size: 2.3rem;
     padding: 8px;
   }
+
   .hoja-de-ruta .paso h3 {
     display: none;
   }
+
   .hoja-de-ruta i {
     text-align: center;
     color: #333;
@@ -1376,16 +1569,19 @@ section .servicios-container .bloque:hover .ripple {
     margin: 8px 50%;
   }
 }
+
 /* Sección: Blog ***/
 .seccion-blog {
   padding: 20px;
   background-color: #ddd;
 }
+
 .seccion-blog h1 {
   width: 100%;
   font-size: 70px;
   text-align: center;
 }
+
 .seccion-blog p {
   margin-bottom: 40px;
 }
@@ -1393,14 +1589,17 @@ section .servicios-container .bloque:hover .ripple {
 .cartas-container {
   display: flex;
 }
+
 .carta-blog {
   cursor: pointer;
   margin: 10px;
 }
+
 .carta-blog:hover h3,
 .carta-blog:hover p {
   color: #222;
 }
+
 .card-subtitle {
   margin-top: -20px;
 }
@@ -1410,6 +1609,7 @@ section .servicios-container .bloque:hover .ripple {
     display: none;
   }
 }
+
 /* Página Blog */
 
 .container-thumbnail-blog {
@@ -1422,11 +1622,14 @@ section .servicios-container .bloque:hover .ripple {
   justify-content: center;
   align-items: center;
   height: 50vh;
+  /* background-color: rgba(60, 64, 67, 0.08); */
 }
+
 .blog-titulo h1 {
   font-size: 5rem;
   margin-bottom: 0;
 }
+
 .blog-titulo p {
   font-size: 1.2rem;
 }
@@ -1436,9 +1639,11 @@ section .servicios-container .bloque:hover .ripple {
   display: flex;
   padding: 20px 0;
 }
+
 .thumbnail-blog:last-child {
   border-bottom: #ddd solid 1px;
 }
+
 .thumbnail-blog .image-container {
   display: flex;
   align-items: center;
@@ -1451,6 +1656,7 @@ section .servicios-container .bloque:hover .ripple {
   border-radius: 10px;
   margin: 0 20px;
 }
+
 .thumbnail-blog-texto {
   padding: 15px;
 }
@@ -1459,6 +1665,7 @@ section .servicios-container .bloque:hover .ripple {
   color: var(--color-segundo);
   transition: color ease 0.4s;
 }
+
 .thumbnail-blog-texto p {
   margin-bottom: 5px;
 }
@@ -1467,21 +1674,31 @@ section .servicios-container .bloque:hover .ripple {
   margin-top: 5px;
 }
 
+/* Otros */
+
+strong {
+  font-weight: 600;
+}
+
 @media (max-width: 991px) {
   .container-thumbnail-blog {
     padding: 0 15px;
   }
+
   .thumbnail-blog {
     padding: 8px 0;
   }
+
   .thumbnail-blog img {
     height: auto;
     width: 200px;
   }
+
   .thumbnail-blog-texto h2 {
     font-size: 20px;
     margin: 0;
   }
+
   .thumbnail-blog-texto p {
     font-size: 15px;
   }
@@ -1491,17 +1708,21 @@ section .servicios-container .bloque:hover .ripple {
   .container-thumbnail-blog {
     padding: 0;
   }
+
   .thumbnail-blog {
     flex-direction: column;
     padding: 8px 0;
   }
+
   .thumbnail-blog img {
     width: 100%;
   }
+
   .thumbnail-blog-texto h2 {
     font-size: 20px;
     margin: 10px 0;
   }
+
   .thumbnail-blog-texto p {
     font-size: 15px;
   }
@@ -1544,6 +1765,7 @@ section .servicios-container .bloque:hover .ripple {
 .entrada-blog h3 {
   margin-bottom: 10px;
 }
+
 .entrada-blog li {
   margin-bottom: 10px;
 }
@@ -1552,13 +1774,16 @@ section .servicios-container .bloque:hover .ripple {
 .flotar-poco {
   animation: flotarpoco 2s ease-in-out infinite;
 }
+
 @keyframes flotarpoco {
   0% {
     transform: translateY(5%);
   }
+
   50% {
     transform: translateY(-5%);
   }
+
   100% {
     transform: translateY(5%);
   }
@@ -1567,19 +1792,24 @@ section .servicios-container .bloque:hover .ripple {
 .flotar-muy-poco {
   animation: flotarmuypoco 4s ease-in-out infinite;
 }
+
 .flotar-muy-poco-dos {
   animation: flotarmuypoco 4s ease-in-out 0.45s infinite;
 }
+
 .flotar-muy-poco-tres {
   animation: flotarmuypoco 4s ease-in-out 0.8s infinite;
 }
+
 @keyframes flotarmuypoco {
   0% {
     transform: translateY(2%);
   }
+
   50% {
     transform: translateY(-2%);
   }
+
   100% {
     transform: translateY(2%);
   }

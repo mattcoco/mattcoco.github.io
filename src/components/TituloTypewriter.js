@@ -24,7 +24,7 @@ window.onload = function () {
     altura + "px";
 };
 
-const TitleTypewriter = () => {
+const TituloTypewriter = () => {
   return (
     <div className="landing-texto-container">
       <div className="texto-fijo">
@@ -59,7 +59,7 @@ const TitleTypewriter = () => {
   );
 };
 
-export default TitleTypewriter;
+export default TituloTypewriter;
 
 /* <Typewriter
 onInit={(typewriter) => {

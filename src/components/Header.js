@@ -78,9 +78,9 @@ const Header = () => {
                 <Nav.Link className="enlace">Portafolio</Nav.Link>
               </LinkContainer>
 
-              <LinkContainer to="/blog">
+              {/* <LinkContainer to="/blog">
                 <Nav.Link className="enlace">Blog</Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
 
               <LinkContainer to="/contacta">
                 <Nav.Link className="enlace attention">Contacta</Nav.Link>
