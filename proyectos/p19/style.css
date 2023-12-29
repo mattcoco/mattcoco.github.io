@@ -2,26 +2,26 @@
 
 * {
 	box-sizing: border-box;
- }
+}
 
- :root {
-	 --primary-color: black;
-	 --secondary-color: white;
- }
+:root {
+	--primary-color: black;
+	--secondary-color: white;
+}
 
- html {
-	 transition: all 0.5s ease-in;
- }
+html {
+	transition: all 0.5s ease-in;
+}
 
- html.dark {
+html.dark {
 	--primary-color: white;
 	--secondary-color: black;
- }
+}
 
- html.dark {
-	 background-color: #111;
-	 color: var(--primary-color);
- }
+html.dark {
+	background-color: #111;
+	color: var(--primary-color);
+}
 
 body {
 	font-family: 'Heebo', sans-serif;
